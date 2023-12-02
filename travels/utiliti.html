@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Utilities</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="agent.css">
+    <link rel="stylesheet" href="property.css">
+
+</head>
+<style>
+    .heading {
+        font-weight: 600;
+        margin: 35px auto 40px;
+        text-align: center;
+
+    }
+
+    .heading span {
+        color: #f87909;
+    }
+
+    hr {
+        border-top: 2px solid black;
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .main {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 35px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.568);
+        color: white;
+        box-shadow: 8px 6px 9px black;
+
+    }
+
+    label {
+        font-size: 20px;
+        padding: 10px;
+
+    }
+
+    input:hover {
+
+        border: 1px solid #f87909;
+
+    }
+
+    .input-group-prepend {
+        padding: 8px;
+    }
+
+    .btn {
+
+        border: none;
+        width: 100%;
+        padding: 6px;
+        background: #ff8317;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 1rem;
+        font-size: 16px;
+        border-radius: 3px;
+
+    }
+
+    .con-btn button {
+        width: 7rem;
+
+    }
+
+    .btn:hover {
+        background: #f87909;
+    }
+
+    #finalAmount h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+
+    #finalAmount {
+        font-family: 'Lobster', cursive;
+        display: none;
+        margin: auto;
+
+    }
+
+    .form-control {
+        padding: 10px;
+        color: black;
+        width: 100%;
+
+    }
+
+    .form-control:focus {
+        border: 1px solid #f87909;
+    }
+
+    @media (max-width: 768px) {
+
+
+        .main {
+            width: 90%;
+
+
+        }
+    }
+
+    @media (max-width: 400px) {
+        .heading {
+            font-size: 60px;
+        }
+
+
+        .main {
+            margin: auto;
+        }
+
+        #finalAmount h2,
+        .finalValue {
+            font-size: 40px;
+        }
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                Air <span>& Sea Logistics</span></a>
+
+        </div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="utiliti.html">Utilities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+
+    </nav>
+
+
+
+    <div>
+        <img src="img/utilities.png" alt="" width="100%" style="overflow: hidden;padding-top: 0px;">
+    </div>
+
+
+
+
+    <!-- Currency Converter -->
+    <h1 class="heading">
+        MASTERS IN DELIVERING SMILES <span> ACROSS MILES.</span>
+    </h1>
+    <hr>
+    <div class="container">
+        <div class="main">
+            <div class="form-group">
+                <label for="oamount">
+                    Amount to Convert :
+                </label>
+                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">From</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="AED">AED</option>
+                            <option value="ARS">ARS</option>
+                            <option value="AUD">AUD</option>
+                            <option value="BGN">BGN</option>
+                            <option value="BRL">BRL</option>
+                            <option value="BSD">BSD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="CLP">CLP</option>
+                            <option value="CNY">CNY</option>
+                            <option value="COP">COP</option>
+                            <option value="CZK">CZK</option>
+                            <option value="DKK">DKK</option>
+                            <option value="DOP">DOP</option>
+                            <option value="EGP">EGP</option>
+                            <option value="EUR">EUR</option>
+                            <option value="FJD">FJD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="GTQ">GTQ</option>
+                            <option value="HKD">HKD</option>
+                            <option value="HRK">HRK</option>
+                            <option value="HUF">HUF</option>
+                            <option value="IDR">IDR</option>
+                            <option value="ILS">ILS</option>
+                            <option value="INR">INR</option>
+                            <option value="ISK">ISK</option>
+                            <option value="JPY">JPY</option>
+                            <option value="KRW">KRW</option>
+                            <option value="KZT">KZT</option>
+                            <option value="MVR">MVR</option>
+                            <option value="MXN">MXN</option>
+                            <option value="MYR">MYR</option>
+                            <option value="NOK">NOK</option>
+                            <option value="NZD">NZD</option>
+                            <option value="PAB">PAB</option>
+                            <option value="PEN">PEN</option>
+                            <option value="PHP">PHP</option>
+                            <option value="PKR">PKR</option>
+                            <option value="PLN">PLN</option>
+                            <option value="PYG">PYG</option>
+                            <option value="RON">RON</option>
+                            <option value="RUB">RUB</option>
+                            <option value="SAR">SAR</option>
+                            <option value="SEK">SEK</option>
+                            <option value="SGD">SGD</option>
+                            <option value="THB">THB</option>
+                            <option value="TRY">TRY</option>
+                            <option value="TWD">TWD</option>
+                            <option value="UAH">UAH</option>
+                            <option value="UYU">UYU</option>
+                            <option value="ZAR">ZAR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="AED">AED</option>
+                            <option value="ARS">ARS</option>
+                            <option value="AUD">AUD</option>
+                            <option value="BGN">BGN</option>
+                            <option value="BRL">BRL</option>
+                            <option value="BSD">BSD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="CLP">CLP</option>
+                            <option value="CNY">CNY</option>
+                            <option value="COP">COP</option>
+                            <option value="CZK">CZK</option>
+                            <option value="DKK">DKK</option>
+                            <option value="DOP">DOP</option>
+                            <option value="EGP">EGP</option>
+                            <option value="EUR">EUR</option>
+                            <option value="FJD">FJD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="GTQ">GTQ</option>
+                            <option value="HKD">HKD</option>
+                            <option value="HRK">HRK</option>
+                            <option value="HUF">HUF</option>
+                            <option value="IDR">IDR</option>
+                            <option value="ILS">ILS</option>
+                            <option value="INR">INR</option>
+                            <option value="ISK">ISK</option>
+                            <option value="JPY">JPY</option>
+                            <option value="KRW">KRW</option>
+                            <option value="KZT">KZT</option>
+                            <option value="MVR">MVR</option>
+                            <option value="MXN">MXN</option>
+                            <option value="MYR">MYR</option>
+                            <option value="NOK">NOK</option>
+                            <option value="NZD">NZD</option>
+                            <option value="PAB">PAB</option>
+                            <option value="PEN">PEN</option>
+                            <option value="PHP">PHP</option>
+                            <option value="PKR">PKR</option>
+                            <option value="PLN">PLN</option>
+                            <option value="PYG">PYG</option>
+                            <option value="RON">RON</option>
+                            <option value="RUB">RUB</option>
+                            <option value="SAR">SAR</option>
+                            <option value="SEK">SEK</option>
+                            <option value="SGD">SGD</option>
+                            <option value="THB">THB</option>
+                            <option value="TRY">TRY</option>
+                            <option value="TWD">TWD</option>
+                            <option value="UAH">UAH</option>
+                            <option value="UYU">UYU</option>
+                            <option value="ZAR">ZAR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con-btn">
+
+                <!-- convert button -->
+                <button class="btn  convert " type="submit">
+                    Convert
+                </button>
+                <!-- reset button -->
+                <button class="btn " onclick="clearVal()">
+                    Reset
+                </button>
+            </div>
+
+        </div>
+
+        <div id="finalAmount">
+
+            <!-- Display the converted amount -->
+            <h2>Converted Amount :
+                <span class="finalValue">
+                </span>
+            </h2>
+        </div>
+    </div>
+
+    <!-- linking script.js file -->
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------Footer Section--------------------------------->
+
+    <hr>
+    <div class="footer">
+        <div class="heading">
+            <h2>Air <span> & Sea Logistics</span></h2>
+        </div>
+        <div class="content-sec">
+
+            <div class="social-media">
+                <h4>Social</h4>
+                <p>
+                    <a href="#"><i class="fab fa-linkedin"></i> </a>
+                </p>
+                <p>
+                    <a href="#"><i class="fab fa-twitter"></i> </a>
+                </p>
+
+                <p>
+                    <a href=""><i class="fab fa-facebook"></i> </a>
+                </p>
+                <p>
+                    <a href=""><i class="fab fa-instagram"></i> </a>
+                </p>
+            </div>
+            <div class="links">
+                <h4>Quick links</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="service.html">Services</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="career.html">Career</a></p>
+                <p><a href="utiliti.html">Utilities</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="details">
+                <h4 class="address">Address</h4>
+                <p>Al – Areeb Clearing And Shipping LLC, Warehouse no 73, <br>Street 26 A, Ras Al khor Industrial
+                    Area1,<br>
+                    P.O. Box No. 62987,Dubai, U.A.E </p>
+                <h4 class="mobile">Mobile</h4>
+                <p><a href="#">1800******</a></p>
+                <h4 class="mail">Email</h4>
+                <p><a href="mailto:info@dialtext.com">@gmail.com</a></p>
+            </div>
+        </div>
+        <footer>
+
+            <hr>
+            © Tour & Travels All Rights Reserved.
+        </footer>
+    </div>
+
+
+
+    <script>
+
+        const menuBtn = document.querySelector(" .menu-icon span"); const
+            searchBtn = document.querySelector(".search-icon"); const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items"); const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
